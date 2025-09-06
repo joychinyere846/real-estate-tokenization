@@ -1,14 +1,18 @@
 
 {
-  "name": "real-estate-tokenization-tests",
+  "name": "real-estate-tokenization",
   "version": "1.0.0",
-  "description": "Run unit tests on this project.",
+  "description": "Real estate investment platform with asset tokenization, investor verification, and pool management smart contracts built on Stacks blockchain.",
   "type": "module",
   "private": true,
   "scripts": {
     "test": "vitest run",
     "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\"",
+    "lint": "clarinet check",
+    "check": "clarinet check",
+    "format": "clarinet format",
+    "dev": "clarinet console"
   },
   "author": "",
   "license": "ISC",
